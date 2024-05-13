@@ -1,1 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Kompleks</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator">
+        <input type="text" id="real1" placeholder="Masukkan bagian real pertama">
+        <input type="text" id="imaginary1" placeholder="Masukkan bagian imajiner pertama">
+        <select id="operator">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+        </select>
+        <input type="text" id="real2" placeholder="Masukkan bagian real kedua">
+        <input type="text" id="imaginary2" placeholder="Masukkan bagian imajiner kedua">
+        <button onclick="calculate()">Hitung</button>
+        <input type="text" id="result" placeholder="Hasil" readonly>
+    </div>
 
+    <script src="script.js"></script>
+</body>
+</html>

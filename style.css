@@ -1,0 +1,24 @@
+.calculator {
+    max-width: 400px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+input[type="text"], select, button {
+    margin: 5px;
+    padding: 10px;
+    width: 100px;
+}
+
+input[type="text"], select {
+    text-align: center;
+}
+
+button {
+    cursor: pointer;
+}
+
+input[type="text"][readonly] {
+    background-color: #f2f2f2;
+    cursor: not-allowed;
+}
