@@ -40,3 +40,61 @@ body {
 .calculator p {
     margin: 10px 0;
 }
+
+/* Light Theme */
+body.light {
+    background-color: #f0f0f0;
+    color: #000;
+}
+
+/* Dark Theme */
+body.dark {
+    background-color: #121212;
+    color: #fff;
+}
+
+body.dark .calculator {
+    background: #1e1e1e;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+body.dark .calculator input[type="text"] {
+    background: #333;
+    color: #fff;
+    border: 1px solid #555;
+}
+
+body.dark .calculator button {
+    background-color: #007bff;
+}
+
+body.dark .calculator button:hover {
+    background-color: #0056b3;
+}
+
+.theme-switcher {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.theme-switcher {
+    text-align: center;
+    margin-top: 20px;
+}
+
+button#toggleTheme {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button#toggleTheme:hover {
+    background-color: #0056b3;
+}
+
+
