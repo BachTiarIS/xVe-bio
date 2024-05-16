@@ -3,19 +3,36 @@ function tambah() {
     var num2 = parseFloat(document.getElementById('num2').value);
     var output = num1 + num2;
     document.getElementById('output').value = output;
+    if (isNaN(output)) {
+        document.getElementById('output').value = 'Nilai output tidak valid';
+     } else {
+        document.getElementById('output').value = output;
+     }
  }
 
 function kurang() {
     const num1 = parseFloat(document.getElementById('num1').value);
     const num2 = parseFloat(document.getElementById('num2').value);
     document.getElementById('output').value = num1 - num2;
+    if (isNaN(output)) {
+        document.getElementById('output').value = 'Nilai output tidak valid';
+     } else {
+        document.getElementById('output').value = output;
+     }
 }
+
+
 
 function kali() {
     var num1 = parseFloat(document.getElementById('num1').value);
     var num2 = parseFloat(document.getElementById('num2').value);
     var output = num1 * num2;
     document.getElementById('output').value = output;
+    if (isNaN(output)) {
+        document.getElementById('output').value = 'Nilai output tidak valid';
+     } else {
+        document.getElementById('output').value = output;
+     }
 }
 
 function bagi() {
@@ -23,9 +40,14 @@ function bagi() {
     var num2 = parseFloat(document.getElementById('num2').value);
     var output = num1 / num2;
     document.getElementById('output').value = output;
+    if (isNaN(output)) {
+       document.getElementById('output').value = 'Nilai output tidak valid';
+    } else {
+       document.getElementById('output').value = output;
+    }
  }
 
-
+ 
 
 // Ambil tombol atau elemen yang akan digunakan untuk mengganti tema
 const themeButton = document.getElementById('toggleTheme');
@@ -37,4 +59,7 @@ toggleTheme.addEventListener('click', () => {
     body.classList.toggle('dark');
 });
     
+
+
+
 
