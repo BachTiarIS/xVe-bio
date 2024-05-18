@@ -1,0 +1,48 @@
+header {
+    color: rgb(238, 231, 231);
+}
+
+body {
+    background-color: #0A0A0A;;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.h1 {
+    color: rgb(238, 231, 231);
+    text-shadow: beige;
+}
+
+.content-wrapper {
+    display: flex; /* Mengaktifkan Flexbox */
+    align-items: center; /* Menyelaraskan item secara vertikal di tengah */
+    justify-content: center; /* Memusatkan konten secara horizontal */
+}
+
+.img1 {
+    margin-right: 20px; /* Memberikan jarak antara gambar dan teks */
+    width: 300px; /* Atur lebar gambar */
+    border-radius: 20px; /* Menerapkan border radius */
+}
+
+.p1 {
+    color: rgb(255, 255, 255);
+    text-shadow: beige;
+    flex: 1; /* Memungkinkan teks mengambil ruang yang tersisa */
+    margin-right: 600px; /* Memberikan jarak antara teks dan batas kanan */
+}
+
+.img1:hover {
+    transform: scale(1.1); /* Menambah ukuran gambar sebesar 10% */
+    transition: 0.3s; /* Mengatur durasi efek hover */
+}
+
+.p1:hover {
+    transform: scale(1.1); /* Menambah ukuran gambar sebesar 10% */
+    transition: 0.3s; /* Mengatur durasi efek hover */
+}
+
+
+
+
+
+

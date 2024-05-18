@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Kompleks</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<header>
+    <div class="theme-switcher">
+        <button id="toggleTheme">Toggle Theme</button>
+    </div>
+    <div class="anjay">
+       
+    </div>
+    <a class="a1" href="/web-kalkulator/index.html">back?</a>
+    
+</header>
+<body>
+    <div class="calculator">
+        <input type="text" name="number1" id="num1">
+        <p></p>
+        <input type="text" name="number2" id="num2">
+        <p>=</p>
+        <input type="text" name="output" id="output" readonly>
+        <p></p>
+        <button onclick="tambah()">tambah</button>
+        <button onclick="kurang()">kurang</button>
+        <button onclick="kali()">kali</button>
+        <button onclick="bagi()">bagi</button>
+    </div>
+    <!-- +read only pada output
+         +pergantian NaN menjadi lebih bagus
+         +theme change
+         +dll -->
+
+    <script src="script.js"></script>
+</body>
+</html>
