@@ -58,7 +58,20 @@ toggleTheme.addEventListener('click', () => {
     // Ganti kelas CSS pada elemen body untuk mengubah tema
     body.classList.toggle('dark');
 });
-    
+
+
+function mouseleave(){
+document.addEventListener("DOMContentLoaded", function() {
+   const image = document.querySelector('.img1');
+   image.addEventListener('mouseleave', function() {
+       image.classList.add('mouseleave');
+       setTimeout(() => {
+           image.classList.remove('mouseleave');
+       }, 300); // Sesuaikan durasi dengan durasi transisi CSS
+   });
+});
+}
+
 
 
 

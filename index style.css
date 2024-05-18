@@ -3,44 +3,120 @@ header {
 }
 
 body {
-    background-color: #0A0A0A;;
+    background-color: #0A0A0A;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 .h1 {
     color: rgb(238, 231, 231);
     text-shadow: beige;
+    animation: fadein 1.5s;
+
 }
 
-.content-wrapper {
-    display: flex; /* Mengaktifkan Flexbox */
-    align-items: center; /* Menyelaraskan item secara vertikal di tengah */
-    justify-content: center; /* Memusatkan konten secara horizontal */
+@keyframes fadein {
+    from {transform: translateY(-20px);
+        opacity: 0;}
+    to {transform: translateY(0);
+    opacity: 100%;}
 }
 
-.img1 {
-    margin-right: 20px; /* Memberikan jarak antara gambar dan teks */
-    width: 300px; /* Atur lebar gambar */
-    border-radius: 20px; /* Menerapkan border radius */
+.pictu {
+    width: 300px;
+    border-radius: 20px;
+    animation: fadein 1.5s;
+    margin-left: 40%;
+    box-shadow: #fffcfc;
 }
 
-.p1 {
-    color: rgb(255, 255, 255);
+.article1 {
+    color: rgb(238, 231, 231);
     text-shadow: beige;
-    flex: 1; /* Memungkinkan teks mengambil ruang yang tersisa */
-    margin-right: 600px; /* Memberikan jarak antara teks dan batas kanan */
+    display: flex;
+    align-items: center; /* Menyelaraskan item secara vertikal */
+    justify-content: center;
 }
 
-.img1:hover {
-    transform: scale(1.1); /* Menambah ukuran gambar sebesar 10% */
-    transition: 0.3s; /* Mengatur durasi efek hover */
+.fig1 {
+    color: rgb(238, 231, 231);
+    text-shadow: beige;
+    width: 40%; /* Atur lebar teks */
+    margin: auto; /* Pusatkan teks */
+    padding: 20px; /* Berikan padding di dalam kotak teks */
+    animation: fadein 1.5s;
 }
 
-.p1:hover {
-    transform: scale(1.1); /* Menambah ukuran gambar sebesar 10% */
-    transition: 0.3s; /* Mengatur durasi efek hover */
+/* Gaya dasar */
+.article1, .article2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
+.fig1, .pictu {
+    margin: 10px;
+}
+
+/* Media query untuk tablet */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .fig1, .pictu {
+        margin: 5px;
+        text-align: center;
+    }
+}
+
+/* Media query untuk ponsel */
+@media (max-width: 480px) {
+    .fig1 {
+        font-size: 14px;
+    }
+
+    .pictu {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.pictu:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.fig1:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.button {
+    padding: 10px 20px;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: rgb(255, 254, 254);
+    background: linear-gradient(to right, #0A0A0A 0%, #0A0A0A 100%);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.button:hover {
+    background: linear-gradient(to right, #0A0A0A 0%, #0A0A0A 100%);
+    box-shadow: 0 6px 8px rgba(145, 140, 140, 0.15);
+    transform: translateY(-2px);
+}
+
+.button:active {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+    transform: translateY(1px);
+}
 
 
 
