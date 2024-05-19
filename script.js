@@ -60,19 +60,33 @@ toggleTheme.addEventListener('click', () => {
 });
 
 
-function mouseleave(){
-document.addEventListener("DOMContentLoaded", function() {
-   const image = document.querySelector('.img1');
-   image.addEventListener('mouseleave', function() {
-       image.classList.add('mouseleave');
-       setTimeout(() => {
-           image.classList.remove('mouseleave');
-       }, 300); // Sesuaikan durasi dengan durasi transisi CSS
-   });
-});
+
+
+const project1 = document.getElementById('project1');
+const project2 = document.getElementById('project2');
+const project3 = document.getElementById('project3');
+const project4 = document.getElementById('project4');
+
+function hideAll(){
+    if (project1) project1.style.display = "none";
+    if (project2) project2.style.display = "none";
+    if (project3) project3.style.display = "none";
+    if (project4) project4.style.display = "none";
 }
 
+function showProject(projectId){
+    hideAll();
+    const project = document.getElementById(projectId);
+    if (project) project.style.display = "block";
+}
 
+// Contoh penggunaan:
+document.addEventListener('DOMContentLoaded', function() {
+    hideAll(); // Sembunyikan semua proyek saat halaman dimuat
+});
 
-
-
+if (project1) {
+    project1.addEventListener('click', () => {
+        showProject('project1');
+    });
+}

@@ -98,13 +98,16 @@ body {
     font-size: 16px;
     text-transform: uppercase;
     color: rgb(255, 254, 254);
-    background: linear-gradient(to right, #0A0A0A 0%, #0A0A0A 100%);
+    background: linear-gradient(to right, #000000 0%, #0A0A0A 100%);
     border: none;
     border-radius: 5px;
     cursor: pointer;
     outline: none;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
+    margin: 15px;
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .button:hover {
@@ -118,7 +121,25 @@ body {
     transform: translateY(1px);
 }
 
+.button {
+    animation: fadein 1.5s;
+    text-decoration: none;
+}
 
+.project1, .project2, .project3, .project4 {
+    border: 2px solid #4D4DFF;
+    padding: 50px;
+    margin: 70px;
+    border-radius: 10px;
+    text-align: left;
+    animation: fadein 1.5s;
+}
+
+.pj1t {
+    text-align: left;
+    color: rgb(238, 231, 231);
+    box-shadow: beige;
+}
 
 
 
