@@ -124,6 +124,7 @@ body {
 .button {
     animation: fadein 1.5s;
     text-decoration: none;
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
 }
 
 .project1, .project2, .project3, .project4 {
