@@ -116,5 +116,42 @@ button#toggleTheme:hover {
     border-radius: 5px;
 }
 
+/* Styles for tablets */
+@media (max-width: 768px) {
+    .calculator {
+        max-width: 90%;
+        padding: 15px;
+    }
+    .calculator button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+    .calculator input[type="text"] {
+        font-size: 16px;
+        padding: 8px;
+    }
+}
 
+/* Styles for mobile phones */
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+    .calculator {
+        max-width: 100%;
+        padding: 10px;
+    }
+    .calculator button {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+    .calculator input[type="text"] {
+        font-size: 14px;
+        padding: 6px;
+    }
+    .theme-switcher {
+        top: 10px;
+        right: 10px;
+    }
+}
 
