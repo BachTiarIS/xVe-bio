@@ -23,9 +23,6 @@ body {
     filter: invert(100%);
 }
 
-.lg1:hover {
-    transform: scale(1.1); /* Membuat gambar sedikit lebih besar ketika di-hover */
-}
 
 .anjay {
     display: flex; /* Menggunakan flexbox untuk tata letak */
@@ -93,45 +90,6 @@ body {
     margin: 10px;
 }
 
-/* Media query untuk tablet */
-@media (max-width: 768px) {
-    .container {
-        flex-direction: column;
-    }
-
-    .fig1, .pictu {
-        margin: 5px;
-        text-align: center;
-    }
-}
-
-/* Media query untuk ponsel */
-@media (max-width: 480px) {
-    .article1{
-        flex-direction: column;
-    }
-
-    .fig1 {
-        font-size: 20px;
-        flex-direction: column;
-    }
-
-    .pictu {
-        width: 100%;
-        height: auto;
-        flex-direction: column;
-    }
-}
-
-.pictu:hover {
-    transform: scale(1.1);
-    transition: 0.3s;
-}
-
-.fig1:hover {
-    transform: scale(1.1);
-    transition: 0.3s;
-}
 
 .button {
     padding: 10px 20px;
@@ -207,7 +165,8 @@ body {
 /* Media query untuk ponsel */
 @media (max-width: 480px) {
     .fig1 {
-        font-size: 12px;
+        font-size: 20px;
+        width: 100%;
     }
 
     .pictu {
@@ -223,6 +182,19 @@ body {
     .project1, .project2, .project3, .project4 {
         padding: 20px;
         margin: 30px;
+    }
+
+    .article1 {
+        flex-direction: column;
+        margin: auto;
+        padding: 20px;
+    }
+
+    .article2 {
+        flex-direction: row;
+        margin: auto;
+        padding: 15px;
+        flex-wrap: wrap;
     }
 }
 

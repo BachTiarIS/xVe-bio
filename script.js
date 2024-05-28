@@ -2,91 +2,84 @@ function tambah() {
     var num1 = parseFloat(document.getElementById('num1').value);
     var num2 = parseFloat(document.getElementById('num2').value);
     var output = num1 + num2;
-    document.getElementById('output').value = output;
     if (isNaN(output)) {
         document.getElementById('output').value = 'Nilai output tidak valid';
-     } else {
+    } else {
         document.getElementById('output').value = output;
-     }
- }
-
-function kurang() {
-    const num1 = parseFloat(document.getElementById('num1').value);
-    const num2 = parseFloat(document.getElementById('num2').value);
-    document.getElementById('output').value = num1 - num2;
-    if (isNaN(output)) {
-        document.getElementById('output').value = 'Nilai output tidak valid';
-     } else {
-        document.getElementById('output').value = output;
-     }
+    }
 }
 
-
+function kurang() {
+    var num1 = parseFloat(document.getElementById('num1').value);
+    var num2 = parseFloat(document.getElementById('num2').value);
+    var output = num1 - num2;
+    if (isNaN(output)) {
+        document.getElementById('output').value = 'Nilai output tidak valid';
+    } else {
+        document.getElementById('output').value = output;
+    }
+}
 
 function kali() {
     var num1 = parseFloat(document.getElementById('num1').value);
     var num2 = parseFloat(document.getElementById('num2').value);
     var output = num1 * num2;
-    document.getElementById('output').value = output;
     if (isNaN(output)) {
         document.getElementById('output').value = 'Nilai output tidak valid';
-     } else {
+    } else {
         document.getElementById('output').value = output;
-     }
+    }
 }
 
 function bagi() {
     var num1 = parseFloat(document.getElementById('num1').value);
     var num2 = parseFloat(document.getElementById('num2').value);
     var output = num1 / num2;
-    document.getElementById('output').value = output;
     if (isNaN(output)) {
-       document.getElementById('output').value = 'Nilai output tidak valid';
+        document.getElementById('output').value = 'Nilai output tidak valid';
     } else {
-       document.getElementById('output').value = output;
+        document.getElementById('output').value = output;
     }
- }
+}
 
- 
-
-// Ambil tombol atau elemen yang akan digunakan untuk mengganti tema
+// Fungsi untuk mengganti tema
 const themeButton = document.getElementById('toggleTheme');
 const body = document.body;
 
-// Tambahkan event listener untuk mengubah tema
-toggleTheme.addEventListener('click', () => {
-    // Ganti kelas CSS pada elemen body untuk mengubah tema
+themeButton.addEventListener('click', () => {
     body.classList.toggle('dark');
 });
 
-
-
-
-const project1 = document.getElementById('project1');
-const project2 = document.getElementById('project2');
-const project3 = document.getElementById('project3');
-const project4 = document.getElementById('project4');
-
-function hideAll(){
-    if (project1) project1.style.display = "none";
-    if (project2) project2.style.display = "none";
-    if (project3) project3.style.display = "none";
-    if (project4) project4.style.display = "none";
-}
-
-function showProject(projectId){
-    hideAll();
-    const project = document.getElementById(projectId);
-    if (project) project.style.display = "block";
-}
-
-// Contoh penggunaan:
-document.addEventListener('DOMContentLoaded', function() {
-    hideAll(); // Sembunyikan semua proyek saat halaman dimuat
-});
-
-if (project1) {
-    project1.addEventListener('click', () => {
-        showProject('project1');
+// Fungsi untuk menyembunyikan semua project
+function hideAll() {
+    const projects = ['project1', 'project2', 'project3', 'project4'];
+    projects.forEach(projectId => {
+        const project = document.getElementById(projectId);
+        if (project) {
+            project.style.display = "none";
+        }
     });
 }
+
+// Fungsi untuk menampilkan hanya project yang diinginkan
+function showProject(projectId) {
+    hideAll(); // Pertama, sembunyikan semua project
+    const project = document.getElementById(projectId);
+    if (project) {
+        project.style.display = "block"; // Kemudian tampilkan project yang diinginkan
+    }
+}
+
+// Menambahkan event listener ke setiap project
+document.addEventListener('DOMContentLoaded', () => {
+    const projects = ['project1', 'project2', 'project3', 'project4'];
+    projects.forEach(projectId => {
+        const projectElement = document.getElementById(projectId);
+        if (projectElement) {
+            projectElement.addEventListener('click', () => {
+                showProject(projectId); // Panggil fungsi showProject saat project diklik
+            });
+        }
+    });
+});
+
