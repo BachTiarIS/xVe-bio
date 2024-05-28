@@ -13,16 +13,15 @@ function hideAll() {
     });
 }
 hideAll()
+
+
 // Fungsi untuk menampilkan hanya project yang diinginkan
 function showProject(projectId) {
     hideAll(); // Pertama, sembunyikan semua project
     const project = document.getElementById(projectId);
     if (project) {
         project.style.display = "block"; // Kemudian tampilkan project yang diinginkan
-        console.log(`${projectId} ditampilkan.`);
-    } else {
-        console.log(`Elemen ${projectId} tidak ditemukan untuk ditampilkan.`);
-    }
+    } 
 }
 
 // Penggunaan
