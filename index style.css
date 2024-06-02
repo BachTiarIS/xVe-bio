@@ -5,6 +5,7 @@ header {
 body {
     background-color: #0A0A0A;
     font-family: Arial, Helvetica, sans-serif;
+    size: 100%;
 }
 
 .h1 {
@@ -37,13 +38,47 @@ body {
     transition: transform 0.3s ease;
 }
 
+/* navbar code style */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #0A0A0A;
+    animation: fadein 1.5s;
+}
+
+.navbar {
+    position: fixed;
+    top: 0; /* atur posisi vertikal sesuai kebutuhan */
+    left: 0; /* atur posisi horizontal sesuai kebutuhan */
+    width: 200px; /* atur lebar navbar sesuai kebutuhan */
+    height: 100%; /* atur tinggi navbar sesuai kebutuhan */
+    background-color: #00000063; /* atur warna latar belakang sesuai kebutuhan */
+    display: flex; /* susun menu secara vertical atau horizontal */
+    flex-direction: column; /* atur arah susunan menu jika menggunakan flexbox */
+    animation: fadein1 1.5s;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+
+#menu1 {
+    margin-left: 150px;
+    margin-top: 30px;
+    size: 30px;
+}
+  
 
 
 
-
-
-
-
+@keyframes fadein1 {
+    from {transform: translateX(-20px);
+        opacity: 50%;}
+    to {transform: translateY(0);
+    opacity: 100%;}
+}
 
 
 

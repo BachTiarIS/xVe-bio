@@ -69,16 +69,3 @@ function showProject(projectId) {
         project.style.display = "block"; // Kemudian tampilkan project yang diinginkan
     }
 }
-
-// Menambahkan event listener ke setiap project
-document.addEventListener('DOMContentLoaded', () => {
-    const projects = ['project1', 'project2', 'project3', 'project4'];
-    projects.forEach(projectId => {
-        const projectElement = document.getElementById(projectId);
-        if (projectElement) {
-            projectElement.addEventListener('click', () => {
-                showProject(projectId); // Panggil fungsi showProject saat project diklik
-            });
-        }
-    });
-});
