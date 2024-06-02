@@ -1,4 +1,4 @@
-// Fungsi untuk menyembunyikan semua project
+// Function untuk menyembunyikan semua project
 function hideAll() {
     console.log('Menyembunyikan semua project...');
     const projects = ['project1', 'project2', 'project3', 'project4'];
@@ -15,7 +15,7 @@ function hideAll() {
 hideAll()
 
 
-// Fungsi untuk menampilkan hanya project yang diinginkan
+// Function untuk menampilkan hanya project yang diinginkan
 function showProject(projectId) {
     hideAll(); // Pertama, sembunyikan semua project
     const project = document.getElementById(projectId);
@@ -36,4 +36,5 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+
 
