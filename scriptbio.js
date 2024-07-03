@@ -10,9 +10,6 @@ function HideALL(){
 }
 
 
-
-
-
 function hideAll() {
     console.log('Menyembunyikan semua project...');
     const projects = ['project1', 'project2', 'project3', 'project4'];
@@ -31,10 +28,10 @@ hideAll()
 
 // Function untuk menampilkan hanya project yang diinginkan
 function showProject(projectId) {
-    hideAll(); // Pertama, sembunyikan semua project
+    hideAll();
     const project = document.getElementById(projectId);
     if (project) {
-        project.style.display = "block"; // Kemudian tampilkan project yang diinginkan
+        project.style.display = "block"; 
     } 
 }
 
@@ -54,7 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 // end of code
 
-// untuk navbar
+// F navbar
 function HideNavbar() {
     document.getElementById("navbar1").style.display = "none";
 }
@@ -84,3 +81,8 @@ document.getElementById('navbar1').addEventListener('click', function() {
     document.getElementById('menu').style.display = 'block';
 });
 // end navbar
+
+
+
+// switch Bar
+

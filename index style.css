@@ -68,8 +68,12 @@ nav {
     margin-left: 150px;
     margin-top: 30px;
     size: 30px;
+
 }
-  
+
+
+
+
 
 
 
@@ -235,4 +239,53 @@ nav {
         flex-wrap: wrap;
     }
 }
+
+/* Mengubah tampilan scroll bar pada elemen */
+.scrollable::-webkit-scrollbar {
+        width: 5px;
+        border-radius: 15px;
+    }
+
+  .scrollable::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 15px;
+    width: 5px;
+  }
+  
+  .scrollable::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 15px;
+    width: 5px;
+  }
+  
+  .scrollable::-webkit-scrollbar-thumb:hover {
+    background: #555;
+    border-radius: 15px;
+    width: 5px;
+  }
+  
+  /* Mengubah tampilan scroll bar pada seluruh halaman */
+  body::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    display: none;
+    width: 5px;
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 15px;
+    width: 5px;
+  }
+  
+  body::-webkit-scrollbar-thumb:hover {
+    background: #555;
+    border-radius: 15px;
+    width: 5px;
+  }
+
+/* //Dark mode */
 
